@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Image display</string>
+    <string name="moon_title">The moon</string>
+    <string name="earth_title">The earth</string>
+    <string name="pluto_title">The pluto</string>
+    <string name="sun_title">The sun</string>
+
+    <string name="moon_id">moon</string>
+    <string name="earth_id">earth</string>
+    <string name="pluto_id">pluto</string>
+    <string name="sun_id">sun</string>
+
+    <string name="moon_image_obtained">25/8/19</string>
+    <string name="earth_image_obtained">25/8/19</string>
+    <string name="pluto_image_obtained">25/8/19</string>
+    <string name="sun_image_obtained">25/8/19</string>
+
+    <string name="moon_source">wwww.google.com</string>
+    <string name="earth_source">wwww.google.com</string>
+    <string name="pluto_source">wwww.google.com</string>
+    <string name="sun_source">wwww.google.com</string>
+
+    <string name="moon_keyword">moon</string>
+    <string name="earth_keyword">earth</string>
+    <string name="pluto_keyword">pluto</string>
+    <string name="sun_keyword">sun</string>
+
+    <string name="moon_desc">The moon is Earths largest natural satellite that we usually see it in the night sky.</string>
+    <string name="earth_desc">The earth, our home is the third planet from the sun the fifth largest of the planets in the solar system.</string>
+    <string name="pluto_desc">Pluto was considered the 9th planet of the Solar System.</string>
+    <string name="sun_desc">The sun is the heart of our solar system, a yellow dwarf star and a hot ball of glowing gases.</string>
+
+    <string name="image_title">Title</string>
+    <string name="image_url">URL</string>
+    <string name="image_name">Name</string>
+</resources>
