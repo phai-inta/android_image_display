@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     TextView titleView;
-    Image theMoon, theSun, theEarth, thePluto;
+    Image macaroon, croissant, tiramisu, muffin;
     ArrayList<Image> img;
 
     @Override
@@ -30,22 +30,21 @@ public class MainActivity extends AppCompatActivity {
                 Image image = intent.getParcelableExtra("IMAGE");
                 String id = image.getId();
                 String title = image.getTitle();
-                Log.i("updateImage: ", image.getDate());
                 switch(id) {
-                    case "moon":
-                        titleView = findViewById(R.id.moon_title);
+                    case "macaroon":
+                        titleView = findViewById(R.id.macaroon_title);
                         titleView.setText(title);
                         break;
-                    case "sun":
-                        titleView = findViewById(R.id.sun_title);
+                    case "croissant":
+                        titleView = findViewById(R.id.croissant_title);
                         titleView.setText(title);
                         break;
-                    case "earth":
-                        titleView = findViewById(R.id.earth_title);
+                    case "tiramisu":
+                        titleView = findViewById(R.id.tiramisu_title);
                         titleView.setText(title);
                         break;
-                    case "pluto":
-                        titleView = findViewById(R.id.pluto_title);
+                    case "muffin":
+                        titleView = findViewById(R.id.muffin_title);
                         titleView.setText(title);
                         break;
                     default:
@@ -58,86 +57,86 @@ public class MainActivity extends AppCompatActivity {
 
     public void initialiseImage() {
         img = new ArrayList<Image>(3);
-        theMoon = new Image("moon", "The moon", "www.moon.com", "The moon is Earths largest natural satellite that we usually see it in the night sky.", "moon", 5, "default@gmail.com", false, "00/00/2019");
-        theEarth = new Image("earth", "The earth", "www.earth.com", "The earth, our home is the third planet from the sun the fifth largest of the planets in the solar system.", "earth", 1,"default@gmail.com", false,"00/00/2019");
-        thePluto = new Image("pluto", "The pluto", "www.pluto.com", "Pluto was considered the 9th planet of the Solar System.", "pluto", 4, "default@gmail.com", false, "00/00/2019");
-        theSun = new Image("sun", "The sun", "www.sun.com", "The sun is the heart of our solar system, a yellow dwarf star and a hot ball of glowing gases", "sun", 2, "default@gmail.com", false, "00/00/2019");
-        img.add(theMoon);
-        img.add(theEarth);
-        img.add(thePluto);
-        img.add(theSun);
+        macaroon = new Image("macaroon", "Macaroon", "www.macaroon.com", "macaroon desc.", "macaroon", 5, "default@gmail.com", false, "00/00/2019");
+        tiramisu = new Image("tiramisu", "Tiramisu", "www.tiramisu.com", "tiramisu desc.", "tiramisu", 1,"default@gmail.com", false,"00/00/2019");
+        muffin = new Image("muffin", "Muffin", "www.muffin.com", "muffin desc.", "muffin", 4, "default@gmail.com", false, "00/00/2019");
+        croissant = new Image("croissant", "Croissant", "www.croissant.com", "croissant desc", "croissant", 2, "default@gmail.com", false, "00/00/2019");
+        img.add(macaroon);
+        img.add(tiramisu);
+        img.add(muffin);
+        img.add(croissant);
     }
 
     //update image object after data being modified
     public void updateImage(Image image) {
         String id = image.getId();
         switch(id) {
-            case "moon":
-                theMoon.setTitle(image.getTitle());
-                theMoon.setUrl(image.getUrl());
-                theMoon.setDes(image.getDes());
-                theMoon.setKeyword(image.getKeyword());
-                theMoon.setRating(image.getRating());
-                theMoon.setEmail(image.getEmail());
-                theMoon.setShared(image.getShared());
-                theMoon.setDate(image.getDate());
-                Log.i("updateImage: ", theMoon.getDate());
+            case "macaroon":
+                macaroon.setTitle(image.getTitle());
+                macaroon.setUrl(image.getUrl());
+                macaroon.setDes(image.getDes());
+                macaroon.setKeyword(image.getKeyword());
+                macaroon.setRating(image.getRating());
+                macaroon.setEmail(image.getEmail());
+                macaroon.setShared(image.getShared());
+                macaroon.setDate(image.getDate());
                 break;
-            case "sun":
-                theSun.setTitle(image.getTitle());
-                theSun.setUrl(image.getUrl());
-                theSun.setDes(image.getDes());
-                theSun.setKeyword(image.getKeyword());
-                theSun.setRating(image.getRating());
-                theSun.setEmail(image.getEmail());
-                theSun.setShared(image.getShared());
-                theSun.setDate(image.getDate());
+            case "croissant":
+                croissant.setTitle(image.getTitle());
+                croissant.setUrl(image.getUrl());
+                croissant.setDes(image.getDes());
+                croissant.setKeyword(image.getKeyword());
+                croissant.setRating(image.getRating());
+                croissant.setEmail(image.getEmail());
+                croissant.setShared(image.getShared());
+                croissant.setDate(image.getDate());
                 break;
-            case "earth":
-                theEarth.setTitle(image.getTitle());
-                theEarth.setUrl(image.getUrl());
-                theEarth.setDes(image.getDes());
-                theEarth.setKeyword(image.getKeyword());
-                theEarth.setRating(image.getRating());
-                theEarth.setEmail(image.getEmail());
-                theEarth.setShared(image.getShared());
-                theEarth.setDate(image.getDate());
+            case "tiramisu":
+                tiramisu.setTitle(image.getTitle());
+                tiramisu.setUrl(image.getUrl());
+                tiramisu.setDes(image.getDes());
+                tiramisu.setKeyword(image.getKeyword());
+                tiramisu.setRating(image.getRating());
+                tiramisu.setEmail(image.getEmail());
+                tiramisu.setShared(image.getShared());
+                tiramisu.setDate(image.getDate());
                 break;
-            case "pluto":
-                thePluto.setTitle(image.getTitle());
-                thePluto.setUrl(image.getUrl());
-                thePluto.setDes(image.getDes());
-                thePluto.setKeyword(image.getKeyword());
-                thePluto.setRating(image.getRating());
-                thePluto.setEmail(image.getEmail());
-                thePluto.setShared(image.getShared());
-                thePluto.setDate(image.getDate());
+            case "muffin":
+                muffin.setTitle(image.getTitle());
+                muffin.setUrl(image.getUrl());
+                muffin.setDes(image.getDes());
+                muffin.setKeyword(image.getKeyword());
+                muffin.setRating(image.getRating());
+                muffin.setEmail(image.getEmail());
+                muffin.setShared(image.getShared());
+                muffin.setDate(image.getDate());
                 break;
             default:
                 break;
         }
     }
 
-    public void moonClickHandler(View v) {
-        sendDetail(theMoon);
+    public void macaroonClickHandler(View v) {
+        sendDetail(macaroon);
     }
 
-    public void earthClickHandler(View v) {
-        sendDetail(theEarth);
+    public void tiramisuClickHandler(View v) {
+        sendDetail(tiramisu);
     }
 
-    public void plutoClickHandler(View v) {
-        sendDetail(thePluto);
+    public void muffinClickHandler(View v) {
+        sendDetail(muffin);
     }
 
-    public void sunClickHandler(View v) {
-        sendDetail(theSun);
+    public void croissantClickHandler(View v) {
+        sendDetail(croissant);
     }
 
     private void sendDetail(Image image) {
         Intent intent = new Intent(getApplicationContext(), ImageActivity.class);
         intent.putExtra("IMAGE", image);
-        Log.i("sending: ", image.getDate() + "/" + image.getShared().toString() + "/" + image.getId() + "/" + image.getTitle() + "/" + image.getUrl() + "/" +
+        Log.i("sending: ", image.getDate() + "/" + image.getShared().toString() + "/" +
+                image.getId() + "/" + image.getTitle() + "/" + image.getUrl() + "/" +
                 image.getDes() + image.getKeyword() + "/" + image.getRating() + "/" + image.getEmail());
         startActivityForResult(intent, 0);
     }
